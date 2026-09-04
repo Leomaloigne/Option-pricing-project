@@ -1,5 +1,11 @@
 # Option-pricing-project
-Black-Scholes pricer, analytical Greeks, and Monte Carlo valuation, with an implied volatility surface built from real SPY options data.
+Black-Scholes pricing of European options, Greeks derived analytically, Monte Carlo valuation compared to Black-Scholes valuation, with an implied volatility surface built from real SPY options data.
 
-requirements:
-numpy, scipy, pandas, matplotlib.
+Tech stack:
+Numpy, Scipy, pandas, matplotlib.
+
+# Features
+
+ggg
+
+

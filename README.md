@@ -55,7 +55,7 @@ European pricing used on an American style option
 
 A constant risk free rate of 0.05 used throughout
 
-only five discrete expiries due to the Yfinance rate limiting issue
+Only five discrete expiries due to the Yfinance rate limiting issue
 
 Dividends not included in calculations
 

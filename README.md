@@ -16,6 +16,7 @@ Implied volatility backsolved and IV smile and surface plotted for real SPY data
 Implied volatility surface on SPY call options with various expiries
 
 <img width="306" height="308" alt="SPY IV surface" src="https://github.com/user-attachments/assets/6fa85e24-ca0e-466d-b13e-ccc4892ebc92" />
+
 IV against moneyness (K/S)
 
 # methododlogy

@@ -31,7 +31,7 @@ Implied volatility smile on an SPY call option with a relatively short expiry (T
 
 IV against strike
 
-# Methododlogy
+# Methodology
 
 SciPy's brentq used in the IV solving, as it is more reliable than other methods such as Newton-Raphson, which is faster but can diverge
 

@@ -39,15 +39,17 @@ Monte Carlo method used to verify the Black-Scholes price, as well as verificati
 
 # Data
 
-Data used from Finance API.
-
-Manual data taken of calls from Yfinace, with Yfinance API having a known Rate limiting issue
+Manual data taken of calls from yfinance, with yfinance API having a known Rate limiting issue
 
 The data was captured on the date 04/09/2026, including the spot and the calls dataframe
 
+Data cleaned and filtered to remove strikes over 20% away from the spot, and remove rows with zero bid/ask
+
+
+
 # Limitations
 
-Deep ITM calls unstable at short expiries
+Deep ITM calls unstable at short expiries due to low time value and low Vega
 
 European pricing used on an American style option
 
@@ -55,9 +57,11 @@ A constant risk free rate of 0.05 used throughout
 
 only five discrete expiries due to the Yfinance rate limiting issue
 
+Dividends not included in calculations
+
 # Tech stack
 
-NumPy, SciPy, Yfinance, Pandas, Matplotlib
+NumPy, SciPy, Pandas, Matplotlib
 
 
 

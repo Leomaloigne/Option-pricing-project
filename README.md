@@ -1,7 +1,7 @@
 # Option-pricing-project
 Black-Scholes pricing of European options, Greeks derived analytically, Monte Carlo valuation compared to Black-Scholes valuation, with an implied volatility surface built from real SPY options data.
 
-# Features
+## Features
 Black-Scholes pricer for European options with put-call parity verification.
 
 Greeks derived analytically (Delta, Gamma, Vega, Rho, Theta). Each Greek was derived by differentiating the Black-Scholes price formula with respect to the relevant parameter, and applying the chain rule. 
@@ -14,7 +14,7 @@ Implied volatility backsolved for confirmation against real market data
 
 IV smile and surface plotted for real SPY data
 
-# Results
+## Results
 Implied volatility surface on SPY call options with various expiries
 
 <img width="306" height="308" alt="SPY IV surface" src="https://github.com/user-attachments/assets/6fa85e24-ca0e-466d-b13e-ccc4892ebc92" />
@@ -31,13 +31,13 @@ Implied volatility smile on an SPY call option with a relatively short expiry (T
 
 IV against strike
 
-# Methodology
+## Methodology
 
 SciPy's brentq used in the IV solving, as it is more reliable than other methods such as Newton-Raphson, which is faster but can diverge
 
 Monte Carlo method used to verify the Black-Scholes price, as well as verification of the call-put parity
 
-# Data
+## Data
 
 Manual data taken of calls from yfinance, with yfinance API having a known Rate limiting issue
 
@@ -47,7 +47,7 @@ Data cleaned and filtered to remove strikes over 20% away from the spot, and rem
 
 
 
-# Limitations
+## Limitations
 
 Deep ITM calls unstable at short expiries due to low time value and low Vega
 
@@ -59,7 +59,7 @@ Only five discrete expiries due to the Yfinance rate limiting issue
 
 Dividends not included in calculations
 
-# Tech stack
+## Tech stack
 
 NumPy, SciPy, Pandas, Matplotlib
 
